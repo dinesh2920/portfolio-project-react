@@ -1,0 +1,32 @@
+.skills-dome {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skill {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .skill-name {
+    font-weight: bold;
+  }
+  
+  .skill-level {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    background-color: blue;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }

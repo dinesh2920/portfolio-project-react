@@ -1,0 +1,53 @@
+@import "../../app.scss";
+.box {
+  padding: 30px;
+  border: 0.5px solid gray;
+  display: flex;
+  min-width: 33.33%;
+  // flex-grow: 4;
+  flex-direction: column;
+  // transform: translate(-50%, -50%); // Center the element initially
+  transition: transform 0.15s ease; // Smooth transition for the transform property
+  // justify-content: space-between;
+
+  @include mobile {
+    border: none;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  h3 {
+    padding: 10%;
+  }
+
+  p {
+    @include mobile {
+      display: flex;
+    }
+  }
+
+  button {
+    padding: 10px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+
+    @include mobile {
+      background-color: transparent;
+      border: 1px solid orange;
+      border-radius: 5px;
+      color: orange;
+      width: 50%;
+      padding: 5px;
+    }
+  }
+}
+.clicked {
+  background: lightgray;
+  color: black;
+  scale: 1.2;
+  // x: 100px;
+  // y: 100px;
+  z-index: 2;
+}
